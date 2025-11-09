@@ -37,24 +37,28 @@ python scripts/validate_records.py
 python scripts/load_to_postgres.py
 All output logs and tables are written locally or to the configured PostgreSQL instance.
 
-Project Structure
-scripts/
-extract_legacy_data.py — extract legacy CSV files
-transform_clean.py — normalize and clean datasets
-validate_records.py — check data quality and integrity
-load_to_postgres.py — load cleaned data into PostgreSQL
+## Project Structure
 
-sql/
-ddl_schema.sql — DDL for staging and core tables
-dim_loyalty.sql — loyalty dimension
-fact_sales.sql — sales fact aggregation
+scripts/  
+extract_legacy_data.py — extract legacy CSV files  
+transform_clean.py — normalize and clean datasets  
+validate_records.py — check data quality and integrity  
+load_to_postgres.py — load cleaned data into PostgreSQL  
 
-data_sample/
-customers_legacy.csv — synthetic customers data
-transactions_legacy.csv — synthetic transactions data
-loyalty_cards.csv — synthetic loyalty program data
+sql/  
+ddl_schema.sql — DDL for staging and core tables  
+dim_loyalty.sql — loyalty dimension  
+fact_sales.sql — sales fact aggregation  
 
-Disclaimer
-This repository and its contents are for demonstration and educational purposes only.
-No proprietary or confidential company data, code, or structure is included.
+data_sample/  
+customers_legacy.csv — synthetic customers data  
+transactions_legacy.csv — synthetic transactions data  
+loyalty_cards.csv — synthetic loyalty program data  
+
+---
+
+## Disclaimer
+
+This repository and its contents are for demonstration and educational purposes only.  
+No proprietary or confidential company data, code, or structure is included.  
 All dataset examples are artificially generated and do not correspond to real individuals or systems.
